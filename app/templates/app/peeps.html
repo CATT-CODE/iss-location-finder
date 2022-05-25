@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Space People</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		{% if numPeeps %}
+		<h2 style="text-align:center">Number of People Currently in Space:</h2>
+		<h2 style="text-align:center">{{numPeeps}}</h2>
+		{% else %}
+		<p>{{ error }}</p>
+		{% endif %}
+	</body>
+</html>
+
